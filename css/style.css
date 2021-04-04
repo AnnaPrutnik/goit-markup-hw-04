@@ -455,13 +455,11 @@ header .studio {
 
 /*Стили для секции Постоянные клиенты*/
 .client-list {
-  display: flex;
-
   align-items: center;
+  --grid-item: 6;
 }
 
 .client-item {
-  width: calc ((100% - 150px)/6);
   display: flex;
   align-items: center;
 }
@@ -469,15 +467,10 @@ header .studio {
 .client-link {
   display: flex;
   align-items: center;
-
   height: 90px;
   color: var(--icon-main-color);
   border: 1px solid var(--icon-main-color);
   border-radius: 4px;
-}
-
-.client-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .client-icon {
@@ -530,6 +523,7 @@ header .studio {
 
 .social-links-title {
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--main-bg-color);
